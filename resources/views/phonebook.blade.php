@@ -8,6 +8,10 @@
 <body>
 	<div id="app">
 		<Myheader></Myheader>
+		<div class="container">
+			<router-view></router-view>	
+			<Add></Add>		
+		</div>
 		<Myfooter></Myfooter>
 	</div>
 	<script src="{{ asset('js/app.js') }}"></script>
