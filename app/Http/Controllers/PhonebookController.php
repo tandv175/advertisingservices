@@ -20,7 +20,7 @@ class PhonebookController extends Controller
 
     public function getData()
     {
-        return Phonebook::orderby('name','DESC')->get();
+        return Phonebook::orderby('name','ASC')->get();
     }
 
     /**
@@ -46,6 +46,7 @@ class PhonebookController extends Controller
         $pb->phone = $request->phone;
         $pb->email = $request->email;
         $pb->save();
+        return $pb;
     }
 
     /**
