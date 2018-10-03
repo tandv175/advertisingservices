@@ -11,3 +11,8 @@ Route::get('/phonebook/{name}',function(){
 Route::resource('phonebook','PhonebookController');
 
 Route::post('getData','PhonebookController@getData');
+
+Route::get('/admin/dashboard', function () {
+    return view('dashboard');
+});
+

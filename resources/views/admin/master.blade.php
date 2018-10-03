@@ -7,7 +7,6 @@
   <base href="{{asset('')}}">
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-  <link rel="stylesheet" href="{{ asset('css/app.css')}}">
   <!-- Bootstrap 3.3.7 -->
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
   <!-- Font Awesome -->
@@ -42,7 +41,6 @@
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
-<div id="app">
   @include('admin.header')
   
   @include('admin.sidebar')
@@ -50,9 +48,7 @@
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
-    {{-- @yield('content') --}}
-    <Dashboard></Dashboard>
-    </section>
+    @yield('content')
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
